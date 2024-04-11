@@ -171,6 +171,7 @@ const uploadImages = asyncHandler(async (req, res) => {
       console.log(newpath);
       urls.push(newpath);
       fs.unlinkSync(path);
+      fs.unlinkSync(path);
     }
     const findBlog = await Blog.findByIdAndUpdate(
       id,
